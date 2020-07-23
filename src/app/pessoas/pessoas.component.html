@@ -1,0 +1,38 @@
+<p>pessoas works!</p>
+<!--
+<p>{{ total }}</p>
+<p *ngFor="let i of pessoas" >{{ i.id }} - {{ i.nome }} - {{ i.valor }}</p>
+-->
+<p>observable</p>
+<p>Valor total: {{ total2 }}</p>
+<p *ngFor="let p of pessoas$ | async  ">{{ p.nome }} - {{ p.valor }} - {{ p.uf }} - {{ p.cidade }}</p>
+
+<pre>
+    <hr> 
+    <p>template</p>
+    <p>agrupar e ordernar por UF e cidade</p>
+    <hr>
+    
+    <div style="background-color: #ccc;">
+        <p>Valor total: 1 - UF: BA - cidade: Salvador</p>
+        <p>ana - 1 - Bahia - Salvador</p>
+    </div>
+    
+    <div style="background-color: #ccc;">
+        <p>Valor total: 2 - UF: ES - cidade: Vila Velha</p>
+        <p>edgard - 2 - ES - Vila Velha</p>
+    </div>
+    
+    <div style="background-color: #ccc;">
+        <p>Valor total: 15 - UF: RJ - cidade: Caxias</p>
+        <p>jose - 15 - RJ - Caxias</p>
+    </div>
+    
+    <div style="background-color: #ccc;">
+        <p>Valor total: 7 - UF: RJ - cidade: Centro</p>
+        <p>lu - 5 - RJ - Rio de Janeiro</p>
+    <p>belem - 2 - RJ - Rio de Janeiro</p>
+</div>
+    
+
+</pre>
